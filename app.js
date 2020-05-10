@@ -22,7 +22,7 @@ app.use(bodyParser.json());
 app.use("/api/users", users)
 app.use("/api/tweets", tweets)
 
-const port = process.env.PORT || 5000;
+// const port = process.env.PORT || 5000;
 
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("frontend/build"));
@@ -31,6 +31,6 @@ if (process.env.NODE_ENV === "production") {
   });
 }
 
-app.listen(port, () => console.log(`Server is running on port ${port}`));
+// app.listen(port, () => console.log(`Server is running on port ${port}`));
 
 
